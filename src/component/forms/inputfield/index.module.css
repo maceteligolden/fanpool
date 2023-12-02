@@ -1,0 +1,20 @@
+.inputfieldcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+    padding: 18px 16px;
+    border-radius: 8px;
+    border: 1px solid #B0E2CB;
+    background: #F9FAFB;
+}
+
+.inputfield {
+    background-color: transparent;
+}
+
+.inputfield:focus{
+    outline: none;
+    background-color: transparent;
+}
