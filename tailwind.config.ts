@@ -7,10 +7,10 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    // colors: {
-    //   'primary': '#7600FF',
-      
-    // },
+    colors: {
+      'primary': '#7600FF',
+      'darkblue': '#1C1C1C',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
