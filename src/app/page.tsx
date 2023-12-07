@@ -190,7 +190,7 @@ const contests: any[] = [
 
  function Hero(){
   return (
-    <section className="relative flex flex-col justify-start bg-[#1C1D22] md:h-screen h-screen">
+    <section className="relative flex flex-col justify-start bg-[#1C1D22] md:h-[80vh] h-[80vh]">
           <div className="inset-0 w-full h-full flex flex-col items-center text-center gap-[8px] md:px-[400px] px-[24px] pt-[40px] z-20">
               <h1 className="font-bold md:text-[64px] text-[24px] text-white">Automate <span className="text-[#D5B0FF]">Your Real-Money Fantasy Premier League</span> Contests.</h1>
               <p className="text-white md:text-[24px] text-[16px]">
@@ -198,8 +198,9 @@ const contests: any[] = [
             Coming Soon!!!
               </p>
           </div>
-          <div className="bottom-0 right-0 left-0 absolute z-10 justify-self-end h-[40%] md:h-[60%] w-full">
-            <Image src={'/hero-cover.png'} alt="hero cover" fill={true} sizes="(max-width: 900px)"/>
+          <div className="bottom-0 right-0 left-0 absolute z-10 justify-self-end h-[80%] md:h-[80%] w-full">
+            <Image src={'/hero-cover.png'} alt="hero cover" fill={true} className="hidden md:flex"/>
+            <Image src={'/mobile-hero-cover.png'} alt="hero cover" fill={true} className="md:hidden flex"/>
           </div>
     </section>
   )
