@@ -1,4 +1,5 @@
 import ClockIcon from "@/component/icons/clock";
+import ContestTrophyIcon from "@/component/icons/contest-trophy";
 import EarnIcon from "@/component/icons/earn";
 import FacebookIcon from "@/component/icons/facebook";
 import InfoIcon from "@/component/icons/info";
@@ -160,12 +161,12 @@ const contests: any[] = [
                     contests.map((contest: any, index: number)=> {
                       return (
                         <div key={index} className="flex flex-col md:w-full w-[339.764px] rounded-lg">
-                          <div className='contest-header'>
-
+                          <div className='contest-header flex flex-row items-center justify-center'>
+                            <ContestTrophyIcon/>
                           </div>
                           <div className="flex flex-row justify-between items-center bg-[#22252C] p-[11px]">
                               <div className="flex flex-row gap-2">
-                                  <Image src='/field.png' width={"41"} height={"41"} alt={"field"}/>
+                                  <Image src='/field.svg' width={"41"} height={"41"} alt={"field"}/>
                                   <div className="flex flex-col">
                                     <p className="text-white font-normal">{contest.title}</p>
                                     <div className="flex flex-row items-center gap-3">
@@ -208,19 +209,19 @@ const contests: any[] = [
 
 const works: any[] = [
   {
-    image: '',
+    image: '/step1.svg',
     title: 'Join Or Create A Contest',
     description: ' Join existing leagues or create your own cup-style competitions. Sync seamlessly with your current Fantasy Premier League contests.',
     icon: <JoinIcon/>
   },
   {
-    image: '',
+    image: '/step2.svg',
     title: 'Invite Your Group',
     description: 'Share your contest invite link effortlessly on WhatsApp, Telegram, Facebook, and more. It\'s time to bring your community together.',
     icon: <InviteIcon/>
   },
   {
-    image: '',
+    image: '/step3.svg',
     title: 'Earn 12x Commissions',
     description: ' Create contests, enjoy the thrill, and cash out! Fanpool magnifies your contests by 12x, offering a payout that matches the excitement. Your commissions just got a major upgrade!',
     icon: <EarnIcon/>
@@ -239,8 +240,8 @@ const works: any[] = [
           works.map((work: any, index: number)=> {
             return (
               <div className="flex flex-col" key={index}>
-                  <div>
-
+                  <div className="relative h-[220px]">
+                      <Image src={work.image} alt={work.title} fill={true}/>
                   </div>
                   <div className="p-3 flex flex-col gap-[16px] text-white">
                     <div className="flex flex-row items-center gap-2">
