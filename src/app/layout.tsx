@@ -1,5 +1,13 @@
-import './globals.css'
+import '../styles/globals.css'
+import {Inter} from 'next/font/google'
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: "Fanpool",
+}
+
+
+const inter = Inter({subsets: ['latin']})
 export default function RootLayout({
   children,
 }: {
@@ -7,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={'flex flex-col'}>
+      <body className={`bg-black-900 ${inter.className}`}>
         {children}
       </body>
     </html>
