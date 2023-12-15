@@ -3,9 +3,9 @@ import Instagram from "@/component/icons/instagram";
 import LinkedlnIcon from "@/component/icons/linkedln";
 import Logo from "@/component/icons/logo";
 import XIcon from "@/component/icons/x";
-import Hero from "@/pages/Hero";
-import Why from "@/pages/Why";
-import Works from "@/pages/Works";
+import Hero from "@/pages/Home/Hero";
+import Why from "@/pages/Home/Why";
+import Works from "@/pages/Home/Works";
 import Link from "next/link";
 
 export default function Home() {
@@ -34,7 +34,7 @@ function Navbar() {
 
 const socialLinks: any[] = [
   {
-    url: "",
+    url: "https://instagram.com/fanpool_gg",
     logo: <Instagram />,
   },
   {
@@ -46,7 +46,7 @@ const socialLinks: any[] = [
     logo: <FacebookIcon />,
   },
   {
-    url: "",
+    url: "https://x.com/Fanpool_gg",
     logo: <XIcon />,
   },
 ];
