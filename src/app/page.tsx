@@ -24,7 +24,9 @@ function Navbar() {
   return (
     <>
       <nav className="container flex flex-row justify-center items-center py-[17px]">
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
       </nav>
     </>
   );

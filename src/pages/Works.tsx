@@ -30,7 +30,7 @@ const works: any[] = [
 
 export default function Works() {
   return (
-    <section className=" bg-black-500 py-[40px] md:py-[80px] px-[8px]">
+    <section className=" bg-black-500 py-[40px] md:py-[80px] px-[8px]" id="works">
       <div className="container flex flex-col items-start gap-2 text-white px-4 md:px-0">
         <h2 className="text-[40px] font-bold font-red-hat">How it works</h2>
         <p className="text-lg font-red-hat">
@@ -43,7 +43,7 @@ export default function Works() {
         {works.map((work: any, index: number) => {
           return (
             <div
-              className=" flex flex-col max-w-[400px]  h-full w-full p-4 gap-4"
+              className=" flex flex-col max-w-[400px]  h-full w-full p-4"
               key={index}
             >
               <div className="relative h-[261px] max-w-[400px]">

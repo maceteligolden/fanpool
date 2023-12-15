@@ -52,13 +52,13 @@ export default function Why() {
                 return (
                   <div
                     key={index}
-                    className="max-w-[500px] max-h-[196px] w-full h-full bg-black-500 text-white md:rounded-2xl rounded-xl md:p-[24px] p-[17px]"
+                    className="max-w-[500px] w-full h-full bg-black-500 text-white md:rounded-2xl rounded-xl md:p-[24px] p-[17px]"
                   >
                     {whyList.icon}
 
                     <div className="md:text-base font-red-hat text-sm mt-4">
                       {whyList.title}
-                      <br />
+                      <br /> <br />
                       {whyList.description}
                     </div>
                   </div>
@@ -92,7 +92,7 @@ export default function Why() {
               return (
                 <div
                   key={index}
-                  className="flex flex-col md:w-full w-[339.764px] rounded-lg"
+                  className="flex flex-col md:w-full w-[339.764px] rounded-[10px] overflow-hidden"
                 >
                   <div className="contest-header flex flex-row items-center justify-center">
                     <ContestTrophyIcon />

@@ -1,11 +1,24 @@
+"use client";
 import * as React from "react";
 import ArrowIcon from "@/component/icons/arrow-icon";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    const href = e.currentTarget.href;
+
+    const targetID = href.replace(/.*\#/, "");
+
+    const elem = document.getElementById(targetID);
+
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="relative">
-      <div className="flex flex-col gap-8 max-w-[986px] w-full text center mx-auto mt-[80px] md:mt-[140px] items-center px-4">
+      <div className="relative flex flex-col gap-8 max-w-[986px] w-full text center mx-auto mt-[80px] md:mt-[140px] items-center px-4 z-10">
         <div>
           <h1 className="font-bold font-graphik text-center md:text-5xl text-2xl text-white leading-[35.2px] md:leading-[70.4px] max-h-[200px] h-full">
             Automate{" "}
@@ -20,12 +33,14 @@ export default function Hero() {
             Soon!!!
           </p>
         </div>
-        <button className="flex items-center w-[170px] h-[46px] justify-center text-purple-500 font-medium gap-2 rounded-[4px] border border-purple-500">
-          <p className="text-base font-red-hat">Learn More</p> <ArrowIcon />
-        </button>
+        <Link href="#works" onClick={handleScroll}>
+          <button className="flex items-center w-[170px] h-[46px] justify-center text-purple-500 font-medium gap-2 rounded-[4px] border border-purple-500">
+            <p className="text-base font-red-hat">Learn More</p> <ArrowIcon />
+          </button>
+        </Link>
       </div>
 
-      <div className=" h-[680px] mt-[-300px]">
+      <div className=" h-[680px] mt-[-300px] z-0">
         <Image
           src={"/hero-cover.png"}
           alt="hero cover"
