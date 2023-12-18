@@ -1,5 +1,5 @@
 import { ISigninInput } from "@/interfaces/auth.interface";
-import { signinValidationSchema } from "@/schemas/auth.schema";
+import { signinValidationSchema } from "@/validation/auth.schema";
 import { useFormik } from "formik"
 
 export default function useSignIn() {

@@ -3,6 +3,7 @@ import * as React from "react";
 import ArrowIcon from "@/component/icons/arrow-icon";
 import Image from "next/image";
 import Link from "next/link";
+import { IMAGES } from "@/constants/images";
 
 export default function Hero() {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -42,14 +43,14 @@ export default function Hero() {
 
       <div className="">
         <Image
-          src={"/hero-cover.png"}
+          src={IMAGES.hero_cover}
           alt="hero cover"
           fill={true}
           style={{ objectFit: "cover", objectPosition: "center" }}
           className="hidden md:flex"
         />
         <Image
-          src={"/mobile-hero-cover.png"}
+          src={IMAGES.mobile_hero_cover}
           alt="hero cover"
           fill={true}
           style={{ objectFit: "cover" }}
