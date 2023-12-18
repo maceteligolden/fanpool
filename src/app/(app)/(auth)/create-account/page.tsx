@@ -42,7 +42,7 @@ export default function CreateAccount() {
           </label>
         </div>
         <label htmlFor="" className="flex flex-col gap-2 items-start">
-          <span>Email</span>
+          <span>Email Address</span>
           <InputContainer className="">
             <InputIcon>{ICONS.email}</InputIcon>
             <InputField type="email" placeholder="Email" />

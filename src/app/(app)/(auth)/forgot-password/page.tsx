@@ -12,44 +12,36 @@ import {
   SelectValue,
 } from "@/component/forms/select";
 import CreateAccountIcon from "@/component/icons/create-account.icon";
+import ForgotpasswordIcon from "@/component/icons/forgotpassword.icon";
 import IdentificationIcon from "@/component/icons/identification.icon";
 import VerificationIcon from "@/component/icons/verification.icon";
 import { ICONS } from "@/constants/icons";
 import Link from "next/link";
 
-export default function CreateAccount() {
+export default function ForgotPassword() {
   return (
     <div className="mb-12">
       <div className="max-w-[400px] mx-auto flex flex-col items-center justify-center gap-2">
-        <VerificationIcon />
+        <ForgotpasswordIcon />
         <div className="text-center">
           <p className="font-graphik text-2xl leading-[36px] font-medium text-black-900">
-            OTP Verification
+            Forgot Password
           </p>
           <p className="font-red-hat mt-2">
-            We have sent a code to your Email Address jon@doe.com
+          Don&apos;t worry! It happens. Please enter the address associated with your account.
           </p>
         </div>
       </div>
       <div className="flex flex-col gap-4 mt-8">
-        <label htmlFor="" className="flex flex-col gap-2 items-start">
-          <span>OTP Verification</span>
+      <label htmlFor="" className="flex flex-col gap-2 items-start">
+          <span>Email Address</span>
           <InputContainer className="">
-            <InputIcon>
-              <IdentificationIcon />
-            </InputIcon>
-            <InputField type="text" placeholder="Enter Code" />
+            <InputIcon>{ICONS.email}</InputIcon>
+            <InputField type="email" placeholder="Email" />
           </InputContainer>
         </label>
-        <p className="">
-          Did not recieve?{" "}
-          <Link className="text-purple-600" href="/login-account">
-            Click to resend
-          </Link>
-        </p>
-
         <Button type="submit" className="">
-          <p>Create Account</p>
+          <p>Proceed</p>
         </Button>
       </div>
     </div>

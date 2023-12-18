@@ -12,43 +12,49 @@ import {
   SelectValue,
 } from "@/component/forms/select";
 import CreateAccountIcon from "@/component/icons/create-account.icon";
+import CreatePasswordIcon from "@/component/icons/create-password.icon";
 import IdentificationIcon from "@/component/icons/identification.icon";
 import VerificationIcon from "@/component/icons/verification.icon";
 import { ICONS } from "@/constants/icons";
 import Link from "next/link";
 
-export default function CreateAccount() {
+export default function CreatePassword() {
   return (
     <div className="mb-12">
       <div className="max-w-[400px] mx-auto flex flex-col items-center justify-center gap-2">
-        <VerificationIcon />
+        <CreatePasswordIcon />
         <div className="text-center">
           <p className="font-graphik text-2xl leading-[36px] font-medium text-black-900">
-            OTP Verification
+            Create New Password
           </p>
           <p className="font-red-hat mt-2">
-            We have sent a code to your Email Address jon@doe.com
+            We have sent you a password reset link to your email, click the link
+            login back into your account.
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-4 mt-8">
+      <div className="flex flex-col gap-4 mt-12">
         <label htmlFor="" className="flex flex-col gap-2 items-start">
-          <span>OTP Verification</span>
+          <span>New Password</span>
           <InputContainer className="">
-            <InputIcon>
-              <IdentificationIcon />
-            </InputIcon>
-            <InputField type="text" placeholder="Enter Code" />
+            <InputIcon>{ICONS.lock}</InputIcon>
+            <InputField type="password" placeholder="Enter Password" />
+            <Button variant="outline" size="icon">
+              {ICONS.showPassword}
+            </Button>
           </InputContainer>
         </label>
-        <p className="">
-          Did not recieve?{" "}
-          <Link className="text-purple-600" href="/login-account">
-            Click to resend
-          </Link>
-        </p>
-
-        <Button type="submit" className="">
+        <label htmlFor="" className="flex flex-col gap-2 items-start">
+          <span>Confirm Password</span>
+          <InputContainer className="">
+            <InputIcon>{ICONS.lock}</InputIcon>
+            <InputField type="password" placeholder="Enter Password" />
+            <Button variant="outline" size="icon">
+              {ICONS.showPassword}
+            </Button>
+          </InputContainer>
+        </label>
+        <Button type="submit" className=" mt-12">
           <p>Create Account</p>
         </Button>
       </div>
