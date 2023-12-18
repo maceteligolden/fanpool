@@ -1,5 +1,5 @@
 import { IChangepasswordInput } from "@/interfaces/auth.interface";
-import { changepasswordValidationSchema } from "@/schemas/auth.schema";
+import { changepasswordValidationSchema } from "@/validation/auth.schema";
 import { useFormik } from "formik";
 
 export default function useChangepassword() {

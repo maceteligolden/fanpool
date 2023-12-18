@@ -3,40 +3,7 @@ import ClockIcon from "@/component/icons/clock";
 import ContestTrophyIcon from "@/component/icons/contest-trophy";
 import InfoIcon from "@/component/icons/info";
 import Image from "next/image";
-import SpreedsheetIcon from "@/component/icons/spreedsheet";
-import TrophyIcon from "@/component/icons/trophy";
-import WalletIcon from "@/component/icons/wallet";
-
-const whyLists: any[] = [
-  {
-    icon: <SpreedsheetIcon />,
-    title: "Spend Less Time on Spreadsheets and Bank Receipts:",
-    description:
-      "Let Fanpool handle the nitty-gritty while you focus on growing your community and maximizing your commissions.",
-  },
-  {
-    icon: <TrophyIcon />,
-    title: "Create contests and join contests across multiple leagues: ",
-    description: "Manage your fantasy leagues all in one place.",
-  },
-  {
-    icon: <WalletIcon />,
-    title: "In-app USDC wallet for fast, safe deposits and cashouts: ",
-    description: "Easily manage your funds without leaving the app.",
-  },
-];
-
-const contests: any[] = [
-  {
-    title: "Last Man Standing",
-  },
-  {
-    title: "TagTeam Matchups",
-  },
-  {
-    title: "Intense 1V1 Showdowns",
-  },
-];
+import { whyLists, contestsList } from "@/content/why.content";
 
 export default function Why() {
   return (
@@ -88,7 +55,7 @@ export default function Why() {
             various contests
           </h2>
           <div className="flex contest-container gap-3 flex-nowrap">
-            {contests.map((contest: any, index: number) => {
+            {contestsList.map((contest: any, index: number) => {
               return (
                 <div
                   key={index}

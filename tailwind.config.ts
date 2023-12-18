@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/component/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -17,6 +17,7 @@ const config: Config = {
       },
     },
     colors: {
+      transparent: "transparent",
       white: "#fff",
       black: {
         900: "#1C1D22",
@@ -25,6 +26,7 @@ const config: Config = {
       },
       purple: {
         900: "#463E4F",
+        600: "#7600FF",
         500: "#D5B0FF",
       },
     },
