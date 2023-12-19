@@ -1,8 +1,16 @@
-import * as React from "react";
-export default function AppLayout({ children }: { children: React.ReactNode }) {
+'use client'
+import * as React from 'react'
+import { ThemeProvider } from '@/component/themeProvider'
+export default function AppLayout({
+  children
+}: {
+  children: React.ReactNode
+}): JSX.Element {
   return (
     <>
-      <main className="min-h-[100vh] min-w-[100vw]">{children}</main>
+      <ThemeProvider enableSystem={true} attribute="class">
+        <main className="min-h-[100vh] min-w-[100vw] bg-background">{children}</main>
+      </ThemeProvider>
     </>
-  );
+  )
 }

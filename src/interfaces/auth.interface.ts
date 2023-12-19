@@ -1,23 +1,23 @@
-export interface ISignUpInput {
-    email: string;
-    firstname: string;
-    lastname: string;
-    username: string;
-    phone: string;
-    password: string;
-    otp?: string;
+export interface SignUpInput {
+  email: string
+  firstname: string
+  lastname: string
+  username: string
+  phone: string
+  password: string
+  otp?: string
 }
 
-export interface ISigninInput {
-    email: string;
-    password: string;
+export interface SigninInput {
+  email: string
+  password: string
 }
 
-export interface IForgotpasswordInput {
-    email: string;
+export interface ForgotpasswordInput {
+  email: string
 }
 
-export interface IChangepasswordInput {
-    password: string;
-    confirmpassword: string;
+export interface ChangepasswordInput {
+  password: string
+  confirmpassword: string
 }
