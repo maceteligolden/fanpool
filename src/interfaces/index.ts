@@ -7,6 +7,7 @@ import type {
   ChangepasswordInput
 } from './auth.interface'
 import type NavItem from './nav.interface'
+import type SettingsItem from './settings.interface'
 
 export type {
   ListItems,
@@ -15,5 +16,6 @@ export type {
   SigninInput,
   ForgotpasswordInput,
   ChangepasswordInput,
-  NavItem
+  NavItem,
+  SettingsItem
 }

@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.19",
     "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-switch": "^1.0.3",
     "formik": "^2.4.5",
     "next": "14.0.3",
     "next-themes": "^0.2.1",
