@@ -6,9 +6,9 @@ import {
   LogoIcon,
   InstagramIcon
 } from '@/component/icons'
-import Hero from '@/page/Home/hero.home'
-import Works from '@/page/Home/works.home'
-import Why from '@/page/Home/why.home'
+import Hero from '@/pages/Home/hero.home'
+import Works from '@/pages/Home/works.home'
+import Why from '@/pages/Home/why.home'
 import Link from 'next/link'
 
 export default function HomePage(): JSX.Element {
