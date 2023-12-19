@@ -1,5 +1,5 @@
 import { IForgotpasswordInput } from "@/interfaces/auth.interface";
-import { forgotpasswordValidationSchema } from "@/validation/auth.schema";
+import { forgotpasswordValidationSchema } from "@/validation/auth.validation";
 import { useFormik } from "formik";
 
 export default function useForgotpassword() {

@@ -1,9 +1,9 @@
-import { IconProps } from "@/interfaces/icon.interface";
+import type { IconProps } from '@/interfaces/index'
 
 export default function VerificationIcon({
-  width = "56",
-  height = "57",
-}: IconProps) {
+  width = '56',
+  height = '57'
+}: IconProps): JSX.Element {
   return (
     <>
       <svg
@@ -27,5 +27,5 @@ export default function VerificationIcon({
         />
       </svg>
     </>
-  );
+  )
 }

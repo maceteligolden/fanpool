@@ -7,6 +7,16 @@
 
 @import url("./fonts.css");
 
+:root {
+  --background: 0, 0%, 100%;
+  --foreground: 230, 10%, 12%;
+
+}
+
+.dark {
+  --background: 230, 10%, 12%;
+  --foreground: 0, 0%, 100%;
+}
 /*
 * remove blue background on autocomplete in chrome
 **/

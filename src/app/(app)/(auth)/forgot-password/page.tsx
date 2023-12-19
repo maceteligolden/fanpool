@@ -1,24 +1,7 @@
-import { Button } from "@/component/forms/button";
-import {
-  InputContainer,
-  InputField,
-  InputIcon,
-} from "@/component/forms/inputfield";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/component/forms/select";
-import CreateAccountIcon from "@/component/icons/create-account.icon";
-import ForgotpasswordIcon from "@/component/icons/forgotpassword.icon";
-import IdentificationIcon from "@/component/icons/identification.icon";
-import VerificationIcon from "@/component/icons/verification.icon";
-import { ICONS } from "@/constants/icons";
-import Link from "next/link";
+import { Button, InputField, InputContainer } from '@/component/forms'
+import { ForgotpasswordIcon, MailIcon } from '@/component/icons'
 
-export default function ForgotPassword() {
+export default function ForgotPasswordPage(): JSX.Element {
   return (
     <div className="mb-12">
       <div className="max-w-[400px] mx-auto flex flex-col items-center justify-center gap-2">
@@ -28,15 +11,16 @@ export default function ForgotPassword() {
             Forgot Password
           </p>
           <p className="font-red-hat mt-2">
-          Don&apos;t worry! It happens. Please enter the address associated with your account.
+            Don&apos;t worry! It happens. Please enter the address associated
+            with your account.
           </p>
         </div>
       </div>
       <div className="flex flex-col gap-4 mt-8">
-      <label htmlFor="" className="flex flex-col gap-2 items-start">
+        <label htmlFor="" className="flex flex-col gap-2 items-start">
           <span>Email Address</span>
           <InputContainer className="">
-            <InputIcon>{ICONS.email}</InputIcon>
+            <MailIcon />
             <InputField type="email" placeholder="Email" />
           </InputContainer>
         </label>
@@ -45,5 +29,5 @@ export default function ForgotPassword() {
         </Button>
       </div>
     </div>
-  );
+  )
 }

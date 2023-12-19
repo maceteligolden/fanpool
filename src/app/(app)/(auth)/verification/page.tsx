@@ -1,23 +1,8 @@
-import { Button } from "@/component/forms/button";
-import {
-  InputContainer,
-  InputField,
-  InputIcon,
-} from "@/component/forms/inputfield";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/component/forms/select";
-import CreateAccountIcon from "@/component/icons/create-account.icon";
-import IdentificationIcon from "@/component/icons/identification.icon";
-import VerificationIcon from "@/component/icons/verification.icon";
-import { ICONS } from "@/constants/icons";
-import Link from "next/link";
+import { Button, InputField, InputContainer } from '@/component/forms'
+import { VerificationIcon, IdentificationIcon } from '@/component/icons'
+import Link from 'next/link'
 
-export default function CreateAccount() {
+export default function VerifyAccountPage(): JSX.Element {
   return (
     <div className="mb-12">
       <div className="max-w-[400px] mx-auto flex flex-col items-center justify-center gap-2">
@@ -35,14 +20,12 @@ export default function CreateAccount() {
         <label htmlFor="" className="flex flex-col gap-2 items-start">
           <span>OTP Verification</span>
           <InputContainer className="">
-            <InputIcon>
-              <IdentificationIcon />
-            </InputIcon>
+            <IdentificationIcon />
             <InputField type="text" placeholder="Enter Code" />
           </InputContainer>
         </label>
         <p className="">
-          Did not recieve?{" "}
+          Did not recieve?{' '}
           <Link className="text-purple-600" href="/login-account">
             Click to resend
           </Link>
@@ -53,5 +36,5 @@ export default function CreateAccount() {
         </Button>
       </div>
     </div>
-  );
+  )
 }

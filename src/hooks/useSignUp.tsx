@@ -1,5 +1,5 @@
 import { ISignUpInput } from "@/interfaces/auth.interface";
-import { signupOTPValidationSchema, signupValidationSchema } from "@/validation/auth.schema";
+import { signupOTPValidationSchema, signupValidationSchema } from "@/validation/auth.validation";
 import { useFormik } from "formik"
 import { useState } from "react";
 

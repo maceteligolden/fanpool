@@ -1,10 +1,7 @@
-import { Button } from "@/component/forms/button";
-import CreateAccountIcon from "@/component/icons/create-account.icon";
-import EmailSentIcon from "@/component/icons/email-sent.icon";
-import { ICONS } from "@/constants/icons";
-import Link from "next/link";
+import { Button } from '@/component/forms'
+import { EmailSentIcon } from '@/component/icons'
 
-export default function EmailReset() {
+export default function EmailResetPage(): JSX.Element {
   return (
     <div className="mb-12">
       <div className="max-w-[400px] mx-auto flex flex-col items-center justify-center gap-2">
@@ -25,5 +22,5 @@ export default function EmailReset() {
         </Button>
       </div>
     </div>
-  );
+  )
 }
