@@ -13,6 +13,8 @@ import {
   SelectSeparator
 } from './select-field.forms'
 
+import { Switch } from './switch.forms'
+
 export {
   Button,
   InputContainer,
@@ -26,5 +28,6 @@ export {
   SelectScrollUpButton,
   SelectSeparator,
   SelectTrigger,
-  SelectValue
+  SelectValue,
+  Switch
 }
