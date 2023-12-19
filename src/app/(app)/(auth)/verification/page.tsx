@@ -8,7 +8,7 @@ export default function VerifyAccountPage(): JSX.Element {
       <div className="max-w-[400px] mx-auto flex flex-col items-center justify-center gap-2">
         <VerificationIcon />
         <div className="text-center">
-          <p className="font-graphik text-2xl leading-[36px] font-medium text-black-900">
+          <p className="font-graphik text-2xl leading-[36px] font-medium text-foreground">
             OTP Verification
           </p>
           <p className="font-red-hat mt-2">

@@ -8,7 +8,8 @@ const ButtonVariants = cva(
     variants: {
       variant: {
         default: 'bg-purple-600',
-        outline: 'w-[170px] h-[46px]  text-purple-500 gap-2 border border-purple-500'
+        outline: 'w-[170px] h-[46px]  text-purple-500 gap-2 border border-purple-500',
+        icon: 'border-0'
       },
       size: {
         default: 'max-w-[383px] h-[56px]',

@@ -18,18 +18,18 @@ export default function LoginAccountPage(): JSX.Element {
       </div>
       <div className="flex flex-col gap-4 mt-8">
         <label htmlFor="" className="flex flex-col gap-2 items-start">
-          <span className='text-foreground'>Email</span>
+          <span className="text-foreground">Email</span>
           <InputContainer className="">
             <MailIcon />
             <InputField type="email" placeholder="Email" />
           </InputContainer>
         </label>
         <label htmlFor="" className="flex flex-col gap-2 items-start">
-          <span className='text-foreground'>Password</span>
+          <span className="text-foreground">Password</span>
           <InputContainer className="">
             <LockIcon />
             <InputField type="password" placeholder="Enter Password" />
-            <Button variant="outline" size="icon">
+            <Button variant="icon" size="icon">
               <ShowPasswordIcon />
             </Button>
           </InputContainer>
