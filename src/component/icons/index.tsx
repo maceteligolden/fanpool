@@ -1,6 +1,7 @@
 import ArrowIcon from './arrow.icon'
 import BellIcon from './bell.icon'
 import CaretDownIcon from './caret-down.icon'
+import CaretLeftIcon from './caret-left.icon'
 import CaretRightIcon from './caret-right.icon'
 import ClockIcon from './clock.icon'
 import CompetitionIcon from './competition.icon'
@@ -83,5 +84,6 @@ export {
   SettingsIcon,
   SupportIcon,
   ThemeIcon,
-  CaretRightIcon
+  CaretRightIcon,
+  CaretLeftIcon
 }
