@@ -1,8 +1,6 @@
 'use client'
 import * as React from 'react'
 import { ThemeProvider } from '@/component/themeProvider'
-import { useMounted } from '@/hooks/use-mounted'
-import { useTheme } from 'next-themes'
 export default function AppLayout({
   children
 }: {

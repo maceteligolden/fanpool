@@ -7,6 +7,7 @@ export default function AuthLayout({
 }: {
   children: React.ReactNode
 }): JSX.Element {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { theme, setTheme } = useTheme()
   return (
     <>

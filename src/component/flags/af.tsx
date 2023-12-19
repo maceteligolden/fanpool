@@ -2,7 +2,7 @@ export default function AfghanistanFlag(): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       id="flag-icons-af"
       viewBox="0 0 640 480"
     >
@@ -107,7 +107,7 @@ export default function AfghanistanFlag(): JSX.Element {
           />
         </g>
         <use
-          xlink:href="#af-a"
+          xlinkHref="#af-a"
           width="100%"
           height="100%"
           x="-600"

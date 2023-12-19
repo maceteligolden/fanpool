@@ -6,21 +6,21 @@ import { IMAGES } from '@/content/index'
 import { ArrowIcon } from '@/component/icons'
 import { Button } from '@/component/forms'
 
+const handleScroll = (
+  e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+): void => {
+  const href = e.currentTarget.href
+
+  // eslint-disable-next-line no-useless-escape
+  const targetID = href.replace(/.*\#/, '')
+
+  const elem = document.getElementById(targetID)
+
+  elem?.scrollIntoView({
+    behavior: 'smooth'
+  })
+}
 export default function Hero(): JSX.Element {
-  const handleScroll = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ): void => {
-    const href = e.currentTarget.href
-
-    // eslint-disable-next-line no-useless-escape
-    const targetID = href.replace(/.*\#/, '')
-
-    const elem = document.getElementById(targetID)
-
-    elem?.scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
   return (
     <section className="relative min-h-[calc(100vh-71px)] h-full max-h-[calc(100vh-71px)]">
       <div className="relative flex flex-col gap-8 max-w-[986px] w-full text center mx-auto pt-[80px] lg:pt-[140px] items-center px-4 z-10">

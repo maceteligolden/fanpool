@@ -1,7 +1,5 @@
 import * as React from 'react'
-import ClockIcon from '@/component/icons/clock.icon'
-import ContestTrophyIcon from '@/component/icons/contest-trophy.icon'
-import InfoIcon from '@/component/icons/info.icon'
+import { ClockIcon, ContestTrophyIcon, InfoIcon } from '@/component/icons/'
 import Image from 'next/image'
 import { whyLists, contestsList } from '@/content/why.content'
 

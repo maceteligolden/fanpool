@@ -1,25 +1,24 @@
-import { IChangepasswordInput } from "@/interfaces/auth.interface";
-import { changepasswordValidationSchema } from "@/validation/auth.validation";
-import { useFormik } from "formik";
+import type { ChangepasswordInput } from '@/interfaces'
+import { changepasswordValidationSchema } from '@/validation/auth.validation'
+import { useFormik } from 'formik'
 
-export default function useChangepassword() {
-
-    const { handleSubmit, handleChange, errors, values, touched} = useFormik({
-        initialValues: {
-            password: '',
-            confirmpassword: ''
-        },
-        validationSchema: changepasswordValidationSchema,
-        onSubmit: (values: IChangepasswordInput) => {
-            console.log(values)
-        }
-    });
-
-    return {
-        onSubmit: handleSubmit,
-        onChange: handleChange,
-        touched: touched,
-        errors: errors,
-        values: values,
+export default function useChangepassword(): any {
+  const { handleSubmit, handleChange, errors, values, touched } = useFormik({
+    initialValues: {
+      password: '',
+      confirmpassword: ''
+    },
+    validationSchema: changepasswordValidationSchema,
+    onSubmit: (values: ChangepasswordInput) => {
+      console.log(values)
     }
+  })
+
+  return {
+    onSubmit: handleSubmit,
+    onChange: handleChange,
+    touched,
+    errors,
+    values
+  }
 }

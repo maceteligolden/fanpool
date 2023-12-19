@@ -1,10 +1,14 @@
 import * as React from 'react'
-import FacebookIcon from '@/component/icons/facebook.icon'
-import Instagram from '@/component/icons/instagram.icon'
-import LinkedlnIcon from '@/component/icons/linkedln.icon'
-import Logo from '@/component/icons/logo.icon'
-import XIcon from '@/component/icons/x.icon'
-import { Hero, Why, Works } from '@/pages/Home'
+import {
+  FacebookIcon,
+  XIcon,
+  LinkedlnIcon,
+  LogoIcon,
+  InstagramIcon
+} from '@/component/icons'
+import Hero from '@/page/Home/hero.home'
+import Works from '@/page/Home/works.home'
+import Why from '@/page/Home/why.home'
 import Link from 'next/link'
 
 export default function HomePage(): JSX.Element {
@@ -24,7 +28,7 @@ function Navbar(): JSX.Element {
     <>
       <nav className="container flex flex-row justify-center items-center py-[17px]">
         <Link href="/">
-          <Logo fill="white" />
+          <LogoIcon fill="white" />
         </Link>
       </nav>
     </>
@@ -34,7 +38,7 @@ function Navbar(): JSX.Element {
 const socialLinks: any[] = [
   {
     url: 'https://instagram.com/fanpool_gg',
-    logo: <Instagram />
+    logo: <InstagramIcon />
   },
   {
     url: '',
@@ -56,7 +60,7 @@ function Footer(): JSX.Element {
       <footer className="flex flex-col gap-[57px] bg-[#161616] text-white md:px-[280px] md:py-[140px] px-[24px] py-[40px]">
         <div className="flex flex-col gap-[46px]  md:flex-row md:justify-between md:items-center">
           <div className="flex flex-col gap-[19px]">
-            <Logo fill="white" />
+            <LogoIcon fill="white" />
             <small className="text-lg font-normal">
               Where Players Banter and Make Earnings.
             </small>

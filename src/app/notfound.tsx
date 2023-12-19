@@ -1,9 +1,7 @@
-export function Notfound(){
-    return (
-        <>
-            <main> 
-                not found
-            </main>
-        </>
-    )
+export function Notfound(): JSX.Element {
+  return (
+    <>
+      <main>not found</main>
+    </>
+  )
 }
